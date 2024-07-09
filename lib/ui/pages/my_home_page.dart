@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/flower_custom_painter_widget.dart';
 import '../widgets/flower_widget.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -26,11 +27,21 @@ class _MyHomePageState extends State<MyHomePage> {
     const double radius = 50.0;
 
     return Scaffold(
-      body: Center(
-        child: FlowerWidget(
-          radius: radius,
-          numPetals: numPetals,
-        ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: <Widget>[
+          const SizedBox(
+            width: double.infinity,
+          ),
+          FlowerWidget(
+            radius: radius,
+            numPetals: numPetals,
+          ),
+          FlowerCustomPainterWidget(
+            radius: radius,
+            numPetals: numPetals,
+          ),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: incrementPetals,

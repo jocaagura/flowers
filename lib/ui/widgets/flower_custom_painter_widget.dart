@@ -3,10 +3,10 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 import 'floret_widget.dart';
-import 'ligule_widget.dart';
+import 'ligule_custom_painter_widget.dart';
 
-class FlowerWidget extends StatelessWidget {
-  const FlowerWidget({
+class FlowerCustomPainterWidget extends StatelessWidget {
+  const FlowerCustomPainterWidget({
     required this.radius,
     super.key,
     this.numPetals = 9,
@@ -32,7 +32,7 @@ class FlowerWidget extends StatelessWidget {
                   random.nextDouble() * 0.1,
               child: Align(
                 alignment: Alignment.topCenter,
-                child: LiguleWidget(
+                child: LiguletCustomPainterWidget(
                   length: radius * 1.8 + random.nextDouble() * 0.4 * radius,
                 ),
               ),

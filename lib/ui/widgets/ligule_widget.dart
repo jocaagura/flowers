@@ -21,10 +21,11 @@ class LiguleWidget extends StatelessWidget {
       width: width,
       height: heigth,
       decoration: BoxDecoration(
-          color: Colors.grey.shade500.withOpacity(0.8),
-          borderRadius: BorderRadius.all(
-            Radius.circular(radius),
-          )),
+        color: Colors.grey.shade500.withOpacity(0.8),
+        borderRadius: BorderRadius.all(
+          Radius.circular(radius),
+        ),
+      ),
     );
   }
 }

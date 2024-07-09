@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 class FloretWidget extends StatelessWidget {
   const FloretWidget({
-    super.key,
     required this.radius,
+    super.key,
   });
 
   final double radius;
